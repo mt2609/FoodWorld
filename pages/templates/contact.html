@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Have a say {% endblock %}
+
+{% block content %}
+<!--
+<a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a> 
+<br/><br/>
+-->
+<div class="card" style="width: 18rem;">
+        <img src="{% static 'mt.jpg' %}" class="card-img-top" alt=" ">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'contact' %}" class="btn btn-dark">Contact us</a>
+        </div>
+      </div> 
+ <br/><br/>
+CONTACT ME!!
+
+{% endblock %}
